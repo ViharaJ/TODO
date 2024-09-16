@@ -7,18 +7,22 @@ export default function TodoList(){
     useEffect(() => {
         fetch("http://localhost:3000/todos")
             .then((res)=>{
-                setItems(res.json());
+                return res.json();
+            }). then((data) => {
+                setItems(data);
             }).then(() =>{
                 console.log(items);
             });
     },[]);
 
-    // return (
-    //     <div className="fullList">
-    //         if(items){
-    //             console.log(items);
-    //         };
-    //     </div>
-    // );
+    return (
+        <div className="fullList">
+            {items && items.map((i) => (
+                 <label>
+                    <input type="checkbox"/> {i.text} <br/>
+                 </label>
+            ))}
+        </div>
+    );
     
 }

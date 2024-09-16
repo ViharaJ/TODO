@@ -1,6 +1,7 @@
 {
     "todos": [
       { "id": "1", "text": "Get grocery"},
-      { "id": "2", "text": "another title"}
+      { "id": "2", "text": "another title"},
+      { "id": "3", "text": "another title"}
     ]
 }
