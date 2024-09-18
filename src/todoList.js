@@ -19,7 +19,7 @@ export default function TodoList(){
         <div className="fullList">
             {items && items.map((i) => (
                  <label>
-                    <input type="checkbox"/> {i.text} <br/>
+                    <input type="checkbox" onChange={(e) => {console.log(e)}}/> {i.text} <br/>
                  </label>
             ))}
         </div>

@@ -19,3 +19,7 @@ code {
   margin-left: auto;
   margin-right: auto;
 }
+
+label input:checked{
+  text-decoration: line-through;
+}
