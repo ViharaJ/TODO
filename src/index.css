@@ -23,3 +23,23 @@ code {
 label input:checked{
   text-decoration: line-through;
 }
+
+input[type=text] {
+  border: none
+}
+
+input[type=text]:focus {
+  outline: none
+}
+
+.item-block{
+  padding: 10px;
+}
+
+.item-block:hover{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.addList{
+  min-width: 50px;
+}
